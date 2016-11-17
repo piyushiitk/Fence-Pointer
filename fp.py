@@ -3,11 +3,13 @@ import contextlib
 import os
 import sys
 
-def fencep(file_name, n):
-	f = open('/home/piyushcs/Desktop/CS698F/output/' + file_name +'.txt')
+# This file is for creating fence pointer for given wah file.
 
-	size = os.stat('/home/piyushcs/Desktop/CS698F/output/' + file_name +'.txt').st_size
-	fw = open('/home/piyushcs/Desktop/CS698F/output/' + file_name + '_' + 'fp.txt', 'w')
+def fencep(file_name, n):
+	f = open('examples/' + file_name +'.txt')
+
+	size = os.stat('examples/' + file_name +'.txt').st_size
+	fw = open('examples/' + file_name + '_' + 'fp.txt', 'w')
 
 	r = size%9
 
