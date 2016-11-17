@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[2]:
+# For creating a file which have the random row data
 
 import random as rand
 import numpy as np
