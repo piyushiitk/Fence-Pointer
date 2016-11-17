@@ -155,12 +155,12 @@ def nicefencep(file_name, num):
 				i += 1
 
 		# Uncomment this to get results
-		# if(fc == 0):
-		# 	print 'fill ', bit
-		# else:
-		# 	m.seek((offset+i-2)*9)
-		# 	block = m.read(9)[:-1]
-		# 	print 'literal ', block, block[r]
+		if(fc == 0):
+			print 'fill ', bit
+		else:
+		 	m.seek((offset+i-2)*9)
+		 	block = m.read(9)[:-1]
+		 	print 'literal ', block, block[r]
 
 def getbit(file_name, num):
 	fc = open('/home/piyushcs/Desktop/CS698F/output/' + file_name +'.txt')
@@ -208,18 +208,20 @@ def getbit(file_name, num):
 
 if __name__ == "__main__":
 	# comparing getbit and nicefencp
-	start = time.time()
-	n = 40000
-	for i in range(1, 5000):
-		getbit(sys.argv[1], int(n+i))
+	# start = time.time()
+	# n = 40000
+	# for i in range(1, 5000):
+	# 	getbit(sys.argv[1], int(n+i))
 
-	print time.time() - start
+	# print time.time() - start
 
-	start = time.time()
+	# start = time.time()
 
-	for i in range(1, 5000):	
-		nicefencep(sys.argv[1], int(n+i))
+	# for i in range(1, 5000):	
+	# 	nicefencep(sys.argv[1], int(n+i))
 
-	print time.time() - start
+	# print time.time() - start
+	
+	nicefencep(sys.argv[1], sys.argv[2])
 
 	
