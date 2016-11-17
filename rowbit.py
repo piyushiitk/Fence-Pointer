@@ -5,8 +5,8 @@ import os
 import time
 
 def fencep(file_name, num):
-	fc = open('/home/piyushcs/Desktop/CS698F/output/' + file_name +'.txt')
-	fp = open('/home/piyushcs/Desktop/CS698F/output/' + file_name + '_fp.txt')
+	fc = open('examples/' + file_name +'.txt')
+	fp = open('examples/' + file_name + '_fp.txt')
 
 	if(num%7 == 0):
 		n = num/7
@@ -83,8 +83,8 @@ def fencep(file_name, num):
 	# 	print 'literal ', data[i-1], data[i-1][r]
 
 def nicefencep(file_name, num):
-	fc = open('/home/piyushcs/Desktop/CS698F/output/' + file_name +'.txt')
-	fp = open('/home/piyushcs/Desktop/CS698F/output/' + file_name + '_fp.txt')
+	fc = open('examples/' + file_name +'.txt')
+	fp = open('examples/' + file_name + '_fp.txt')
 
 	if(num%7 == 0):
 		n = num/7
@@ -154,7 +154,7 @@ def nicefencep(file_name, num):
 					temp = temp - int(block[2:], 2)
 				i += 1
 
-
+		# Uncomment this to get results
 		# if(fc == 0):
 		# 	print 'fill ', bit
 		# else:
@@ -197,7 +197,7 @@ def getbit(file_name, num):
 					temp = temp - int(block[2:], 2)
 				i += 1
 
-
+		# Uncomment this to get results
 		# if(fc == 0):
 		# 	print 'fill ', bit
 		# else:
@@ -207,6 +207,7 @@ def getbit(file_name, num):
 
 
 if __name__ == "__main__":
+	# comparing getbit and nicefencp
 	start = time.time()
 	n = 40000
 	for i in range(1, 5000):
