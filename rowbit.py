@@ -15,7 +15,6 @@ def fencep(file_name, num):
 		n = num/7 + 1
 		r = num%7
 
-	# 
 	prev = 1
 	res = 1
 	# p, offset variables are the mapping from real block no to compressed block no in compressed file.
