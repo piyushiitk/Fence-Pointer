@@ -14,6 +14,6 @@ python fp.py wah
 For using rowbit to get the bit of a perticular row.
 ```python
 #python rowbit file_name rownumber
-python rowbit wah 5
+python rowbit.py wah 5
 ```
 P.S. The default location for data is examples in this demo so change location in fp.py and rowbit.py to customize.
